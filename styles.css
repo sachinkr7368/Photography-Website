@@ -1,133 +1,80 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-  font-family: 'Roboto Condensed', sans-serif;
-  margin: 0;
-  background: grey;
-  height: auto;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Acme Photography</title>
+</head>
 
-h1 {
-  font-weight: 400;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  margin: 0;
-}
+<body>
+    <main>
+        <div id="landing">
+            <div id="landing-text">
+                <div id="landing-text-inner">
+                    <h1>Acme Photography</h1>
+                    <h2>Beautiful Natural Photography</h2>
+                    <a href="#images" class="btn" id="view-work">
+                        View Work
+                    </a>
+                </div>
+            </div>
+            <div id="landing-image"></div>
+        </div>
 
-h2 {
-  font-weight: 400;
-  font-size: 1.2rem;
-  text-transform: capitalize;
-  margin: 0;
-}
+        <div id="images">
+            <div id="header">
+                <h2>Our Work</h2>
+            </div>
 
-img {
-  display: block;
-  width: 100%;
-}
+            <img src="https://source.unsplash.com/1600x900/?nature,water" alt="">
+            <div class="caption">
+                <h3>Photo One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?nature,trees" alt="">
+            <div class="caption">
+                <h3>Photo Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?nature,flowers" alt="">
+            <div class="caption">
+                <h3>Photo Three</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?nature,animals" alt="">
+            <div class="caption">
+                <h3>Photo Four</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+            </div>
+            <img src="https://source.unsplash.com/1600x900/?nature,clouds" alt="">
+            <div class="caption">
+                <h3>Photo Five</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tenetur.</p>
+            </div>
+        </div>
+    </main>
 
-main {
-  max-width: 900px;
-  margin: auto;
-  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
-    -30px 0px 40px rgba(0, 0, 0, 0.1);
-}
+    <footer>
+        <h3>Get In Touch</h3>
+        <p>Email or call us to set up a consult</p>
+        <p>Email:
+            <strong>contact@acmephotos.test</strong>
+        </p>
+        <p>Phone:
+            <strong>(617) 555-5555</strong>
+        </p>
+    </footer>
+    <script
+			  src="http://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
-#landing {
-  background: #fff;
-}
+</body>
 
-#landing-text {
-  display: flex;
-  flex: 0 1 40vw;
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-#landing-text h2 {
-  color: #888;
-}
-
-#landing-image {
-  background: url(https://source.unsplash.com/De8wMYoSSBc);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
-  flex: 0 1 60vw;
-  margin: 0;
-}
-
-.btn {
-  padding: 0.5rem 2rem;
-  border: 1px #ccc solid;
-  display: inline-block;
-  margin: 2rem 0 0;
-  border-radius: 50px;
-  text-decoration: none;
-  color: #333;
-  transition: background 500ms ease;
-}
-
-.btn:hover {
-  background: #f4f4f4;
-}
-
-#header {
-  padding: 1.5rem;
-  text-align: center;
-  background: #333;
-  color: #fff;
-}
-
-#header h2 {
-  border-left: dotted 1px #fff;
-  border-right: dotted 1px #fff;
-  display: inline-block;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-.caption {
-  padding: 0.8rem;
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  margin: auto;
-  color: #333;
-}
-
-footer h3 {
-  font-size: 3rem;
-  margin-bottom: 0;
-}
-
-/* Screen Sizes 500px and Up */
-@media (min-width: 500px) {
-  #landing {
-    display: flex;
-    height: 100%;
-  }
-
-  #landing-text {
-    height: 100vh;
-  }
-
-  #landing-image {
-    height: 100vh;
-  }
-}
-
-/* Screen Sizes 700px and Up */
-@media (min-width: 700px) {
-  .btn {
-    padding: 1rem 3rem;
-  }
-}
+</html>
