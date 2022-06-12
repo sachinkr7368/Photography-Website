@@ -2,7 +2,7 @@
 
 ### By Sachin Kumar
 
-#### This Web Page is Showing Mm Photography Sample Shots
+#### This Web Page is Showing My Photography Sample Shots
 
 ## Technologies Used
 
